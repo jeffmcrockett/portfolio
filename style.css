@@ -1,0 +1,264 @@
+
+.name {
+    position: relative;
+    grid-area: name;
+    width: 100vw;
+    margin-bottom: -3px;
+}
+.name img {
+    width: 100vw;
+}
+.name h1 {
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vw;
+}
+.name h2 {
+    color: white;
+    font-size: 2vw;
+    margin-top: 6vw;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 2px;
+}
+.namecontainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    justify-content: center;
+    top: 5.5%;
+    font-style: wrap;
+}
+.namebox {
+    margin-left: auto;
+    margin-right: auto;
+}
+.nameinfo {
+    margin-left: auto;
+    margin-right: auto;
+}
+.headshot img{
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+    border-radius: 50% 50% 50% 50%;
+    border: solid 10px rgb(75,29,24);
+}
+#jeffcrockett {
+    color: rgb(242,24,31);
+    font-size: 5vw;
+}
+#developer {
+    color: rgb(242,24,31);
+    font-size: 3vw;
+}
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.6vw;
+    align-items: center;
+    width: 100vw;
+    height: 4vw;
+    background-color: rgb(43, 43, 43);
+    position: sticky;
+    top: 0;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+.about:hover {
+    color: red;
+}
+.experience:hover {
+    color: red;
+}
+.skills:hover {
+    color: red;
+}
+.hobbies:hover {
+    color: red;
+}
+.portfolio:hover {
+    color: red;
+}
+.aboutme {
+    grid-area: aboutme;
+    width: 100vw;
+    background-color: black;
+}
+.aboutme h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    color: red;
+}
+.aboutme p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.35vw;
+    color: white;
+    margin-left: 4vw;
+    margin-right: 6vw;
+}
+.redlettername {
+    color: red;
+    font-size: 1.75vw;
+}
+.aboutme h6 {
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.myexperience {
+    grid-area: myexperience;
+    width: 100vw;
+    background-color: rgb(37,37,37);
+}
+.myexperience h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    color: red;
+}
+.experiencecontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3vw;
+    width: 96vw;
+}
+.experienceexample {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-bottom: 3vw;
+    border: 5px solid white;
+}
+.positiontitle {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.75vw;
+    width: 100%;
+    color: white;
+}
+.positiontitle h3 {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.companyanddate {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.companyanddate h5 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5vw;
+    color: red;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0;
+    margin-bottom: 0.2vw;
+}
+.companyanddate h5 span {
+    font-size: 1vw;
+}
+.positioninformation li {
+    overflow-wrap: normal;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+}
+.myexperience h6 {
+    color: rgb(37,37,37);
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.maincontainer {
+    display: grid;
+    grid-template-areas: 
+        'name'
+        'navbar'
+        'aboutme'
+        'border1'
+        'myexperience'
+        'border2'
+        'item5'
+        'border3'
+        'footer'
+        ;
+    margin: 0;
+}
+
+
+
+/* Start of text typewriter */
+/*
+.text_1 {
+    animation: text1;
+}
+.text_2 {
+    animation: text2;
+}  
+.text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(22, end);
+    animation-iteration-count: infinite;
+}  
+.text_1::after, .text_2::after {
+    content: "|";
+    position: relative;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}  
+@keyframes caret {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}  
+@keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 18em;
+    }
+} 
+@keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 22.5em;
+    }
+}
+*/
+/* End of typewriter */
+
+
+/* My fonts
+
+font-family: 'Kaushan Script', cursive;
+font-family: 'Romanesco', cursive;
+font-family: 'Lato', sans-serif;
