@@ -20,6 +20,12 @@
     font-family: 'Kaushan Script', cursive;
     letter-spacing: 2px;
 }
+.animate__zoomOutRight {
+    animation-play-state: paused;
+}
+.animate__zoomOutRight:hover {
+    animation-play-state: running;
+}
 .namecontainer {
     display: flex;
     flex-direction: column;
