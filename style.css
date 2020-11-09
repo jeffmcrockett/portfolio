@@ -60,6 +60,7 @@
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.6vw;
+    z-index: 99999;
     align-items: center;
     width: 100vw;
     height: 4vw;
@@ -182,9 +183,21 @@
 .myexperience h6 {
     color: rgb(37,37,37);
     font-size: 2vw;
-    margin-top: 2vw;
+    margin-top: 0vw;
     margin-bottom: 2vw;
 }
+.skillsandedu {
+    grid-area: skillsandedu;
+    background-color: black;
+}
+.skillsandedu h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    color: red;
+}
+
 .maincontainer {
     display: grid;
     grid-template-areas: 
@@ -194,11 +207,61 @@
         'border1'
         'myexperience'
         'border2'
-        'item5'
+        'skillsandedu'
         'border3'
         'footer'
         ;
     margin: 0;
+}
+.academy {
+    grid-area: academy;
+    border: 5px solid white;
+    width: 25vw;
+}
+.skillsandedu h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.75vw;
+    color: white;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.skillsandedu h5 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5vw;
+    color: red;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0;
+    margin-bottom: 0.2vw;
+    text-align: center;
+}
+.skillsandedu h5 span {
+    font-size: 1vw;
+}
+.skillsandedu p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    color: white;
+}
+.skillsandedu li {
+    color: white;
+    margin-left: 3vw;
+}
+.skillsandedu h6 {
+    color: black;
+    font-size: 2vw;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+}
+.skillscontainer {
+    display: grid;
+    grid-template-areas: 
+        'academy developmentskills developmentskills'
+        'college businessskills businessskills';
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 9vw;
 }
 
 
@@ -262,3 +325,28 @@
 font-family: 'Kaushan Script', cursive;
 font-family: 'Romanesco', cursive;
 font-family: 'Lato', sans-serif;
+
+*/
+
+
+.come-in {
+  transform: translateX(2000px);
+  animation: come-in 1.8s ease forwards;
+}
+.come-in:nth-child(2) {
+  animation-duration: 4.2s; /* So they look staggered */
+}
+.come-in:nth-child(3) {
+    animation-duration: 6.8s; /* So they look staggered */
+}
+.come-in:nth-child(4) {
+    animation-duration: 9.2s; /* So they look staggered */
+}
+.already-visible {
+    transform: translateY(0);
+    transition: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
