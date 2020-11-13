@@ -179,12 +179,12 @@
 }
 .positioninformation li {
     overflow-wrap: normal;
-    width: 100%;
+    width: 92%;
     font-family: 'Lato', sans-serif;
     font-size: 1vw;
     color: white;
     text-decoration: none;
-    margin-right: 2vw;
+    margin-left: 1vw;
 }
 .myexperience h6 {
     color: rgb(37,37,37);
@@ -223,6 +223,12 @@
     grid-area: academy;
     border: 5px solid white;
     width: 25vw;
+    margin-bottom: 3vw;
+}
+.college {
+    grid-area: college;
+    border: 5px solid white;
+    width: 25vw;
 }
 .skillsandedu h3 {
     font-family: 'Kaushan Script', cursive;
@@ -248,8 +254,11 @@
 .skillsandedu p {
     font-family: 'Lato', sans-serif;
     font-size: 1.2vw;
-    margin-left: 2vw;
     color: white;
+}
+.college p, .academy p {
+    text-align: center;
+    margin-left: 0;
 }
 .skillsandedu li {
     color: white;
@@ -258,16 +267,53 @@
 .skillsandedu h6 {
     color: black;
     font-size: 2vw;
-    margin-top: 0vw;
+    margin-top: 2vw;
     margin-bottom: 2vw;
+}
+.developmentskills {
+    grid-area: developmentskills;
+    border: 5px solid white;
+    width: 25vw;
+    margin-left: 1vw;
+}
+.businessskills {
+    grid-area: businessskills;
+    border: 5px solid white;
+    width: 25vw;
+    margin-left: 1.7vw;
+}
+.specificskillcontainer {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    color: red;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 13vw 2.2vw 2.2vw 2.2vw 2.2vw 2.2vw;
+    line-height: 1.9vw;
+}
+.specificskillcontainer h4 {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.specificskillcontainer i{
+    line-height: 3vw;
+    align-items: baseline;
+}
+.specificskillcontainer .redicon {
+    color: red;
+}
+.specificskillcontainer .grayicon {
+    color: lightgrey;
 }
 .skillscontainer {
     display: grid;
     grid-template-areas: 
-        'academy developmentskills developmentskills'
-        'college businessskills businessskills';
+        'academy developmentskills businessskills'
+        'college developmentskills businessskills';
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 9vw;
+    margin-left: 9.1vw;
+    margin-right: 7.1vw;
 }
 
 
@@ -334,19 +380,20 @@ font-family: 'Lato', sans-serif;
 
 */
 
+/* SLIDING ANIMATION BEHINNING */
 
 .come-in {
   transform: translateX(2000px);
-  animation: come-in 1.8s ease forwards;
+  animation: come-in 1.5s ease forwards;
 }
 .come-in:nth-child(2) {
-  animation-duration: 4.2s; /* So they look staggered */
+  animation-duration: 3.5s; /* So they look staggered */
 }
 .come-in:nth-child(3) {
-    animation-duration: 6.8s; /* So they look staggered */
+    animation-duration: 5.5s; /* So they look staggered */
 }
 .come-in:nth-child(4) {
-    animation-duration: 9.2s; /* So they look staggered */
+    animation-duration: 7.5s; /* So they look staggered */
 }
 .already-visible {
     transform: translateY(0);
