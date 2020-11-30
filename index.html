@@ -17,7 +17,7 @@
                 <h1>Hello, I'm <span id="jeffcrockett">Jeffrey Crockett</span></h1>
             </div>
             <div class="headshot">
-                <img class="animate__animated animate__zoomOutRight" src="images/headshot.png">
+                <img src="images/headshot.png">
             </div>
             <div class="nameinfo">
                 <h2 class="animate__animated animate__tada animate__delay-2s animate__slow">Business Professional / <span id="developer"> Full-Stack Web Developer</span> / UX + UI Consultant</h2>
@@ -25,13 +25,23 @@
         </div>
     </div>
     <div class="navbar">
-        <div class="about">About</div>
-        <div class="experience">Experience</div>
-        <div class="skills">Skills</div>
-        <div class="hobbies">Hobbies</div>
-        <div class="portfolio">Portfolio</div>
+        <div class="about">
+            <a href="#jumptoaboutme">About</a>
+        </div>
+        <div class="experience">
+            <a href="#jumptoexperience">Experience</a>
+        </div>
+        <div class="skills">
+            <a href="#jumptoskills">Skills</a>
+        </div>
+        <div class="hobbies">
+            <a href="#jumptohobbies">Hobbies</a>
+        </div>
+        <div class="portfolio">
+            <a href="#jumptoportfolio">Portfolio</a>
+        </div>
     </div>
-    <div class="aboutme">
+    <div class="aboutme" id="jumptoaboutme">
         <h2>About Me</h2>
         <p>My name is Jeff Crockett. I graduated Texas State University in 2016 with a BBA in Business Management. 
             My degree, however, was not the beginning of my professional career. Building on a keen understanding 
@@ -69,7 +79,10 @@
         </p>
         <h6>spacer</h6>
     </div>
-    <div class="myexperience">
+    <div class="border1">
+        <img class="border1pic" src="/images/border1pic.png">
+    </div>
+    <div class="myexperience" id="jumptoexperience">
         <h2>Work Experience</h2>
         <div class="experiencecontainer">
             <div class="experienceexample come-in">
@@ -173,22 +186,23 @@
         </div>
         <h6>spacer</h6>
     </div>
-    <div class="skillsandedu">
+    <img class="border2" src="/images/border2pic.png">
+    <div class="skillsandedu" id="jumptoskills">
         <h2>Skills and Education</h2>
         <div class="skillscontainer">
-            <div class="academy come-in">
+            <div class="academy bar">
                 <h3>Austin Coding Academy</h3>
                 <h5>FULL-STACK WEB DEVELOPMENT</h5>
                 <h5><span class="dates">May 2021</span></h5>
                 <p>Certifications Names...</p>
             </div>
-            <div class="college come-in">
+            <div class="college bar">
                 <h3>Texas State University</h3>
                 <h5>BACHELOR OF BUSINESS ADMINISTRATION</h5>
                 <h5><span class="dates">August 2016</span></h5>
                 <p>Business Management</p>
             </div>
-            <div class="developmentskills come-in">
+            <div class="developmentskills bar">
                 <h3>Development Skills</h3>
                 <div class="specificskillcontainer">
                     <h4>HTML</h4>
@@ -241,7 +255,7 @@
                         <i class="fa fa-heart-broken grayicon"></i>
                 </div>
             </div>
-            <div class="businessskills come-in">
+            <div class="businessskills bar">
                 <h3>Business Skills</h3>
                 <div class="specificskillcontainer">
                     <h4>Business Development</h4>
@@ -297,10 +311,20 @@
         </div>
         <h6>spacer</h6>
     </div>
+    <img class="border3" src="/images/border3pic.png">
+    <div class="portfoliosection">
+        <h2>Portfolio</h2>
+            <div class="portfoliocards">
+                <div class="portfoliocard">
+ 
+                </div>
+            </div>
+        <h6>spacer</h6>
+    </div>
     <div class="footer">
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </body>
 </html>

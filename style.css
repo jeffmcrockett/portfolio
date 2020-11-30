@@ -76,20 +76,48 @@
     color: white;
     font-family: 'Kaushan Script', cursive;
 }
-.about:hover {
-    color: red;
+.navbar div a {
+    scroll-behavior: smooth;
 }
-.experience:hover {
-    color: red;
+.about a{
+    text-decoration: none;
+    color: white;
 }
-.skills:hover {
+.about a:hover {
     color: red;
+    text-decoration: none;
 }
-.hobbies:hover {
-    color: red;
+.experience a{
+    text-decoration: none;
+    color: white;
 }
-.portfolio:hover {
+.experience a:hover {
     color: red;
+    text-decoration: none;
+}
+.skills a{
+    text-decoration: none;
+    color: white;
+}
+.skills a:hover {
+    color: red;
+    text-decoration: none;
+}
+.hobbies a{
+    text-decoration: none;
+    color: white;
+}
+.hobbies a:hover {
+    color: red;
+    text-decoration: none;
+}
+.portfolio a{
+    text-decoration: none;
+    color: white;
+}
+.portfolio a:hover {
+    color: red;
+    text-decoration: none;
 }
 .aboutme {
     grid-area: aboutme;
@@ -151,7 +179,7 @@
 .positiontitle {
     text-align: center;
     font-family: 'Kaushan Script', cursive;
-    font-size: 1.75vw;
+    font-size: 1.65vw;
     width: 100%;
     color: white;
 }
@@ -215,8 +243,10 @@
         'border2'
         'skillsandedu'
         'border3'
-        'footer'
-        ;
+        'hobbies'
+        'border4'
+        'portfolio'
+        'footer';
     margin: 0;
 }
 .academy {
@@ -315,7 +345,47 @@
     margin-left: 9.1vw;
     margin-right: 7.1vw;
 }
-
+.portfoliosection {
+    grid-area: portfolio;
+    width: 100vw;
+    background-color: rgb(37,37,37);
+}
+.portfoliosection h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    color: red;
+}
+.portfoliocards  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3vw;
+    width: 96vw;
+}
+.portfoliosection h6 {
+    color: rgb(37,37,37);
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.border3 {
+    grid-area: border3;
+    width: 100vw;
+}
+.border2 {
+    grid-area: border2;
+    width: 100vw;
+}
+.border1 {
+    grid-area: border1;
+}
+.border1pic {
+    width: 100vw;
+    margin-bottom: -12px;
+}
 
 
 /* Start of text typewriter */
@@ -382,18 +452,18 @@ font-family: 'Lato', sans-serif;
 
 /* SLIDING ANIMATION BEHINNING */
 
-.come-in {
+/* .come-in {
   transform: translateX(2000px);
   animation: come-in 1.5s ease forwards;
 }
 .come-in:nth-child(2) {
-  animation-duration: 3.5s; /* So they look staggered */
+  animation-duration: 3.5s;
 }
 .come-in:nth-child(3) {
-    animation-duration: 5.5s; /* So they look staggered */
+    animation-duration: 5.5s;
 }
 .come-in:nth-child(4) {
-    animation-duration: 7.5s; /* So they look staggered */
+    animation-duration: 7.5s;
 }
 .already-visible {
     transform: translateY(0);
@@ -402,4 +472,4 @@ font-family: 'Lato', sans-serif;
 
 @keyframes come-in {
   to { transform: translateY(0); }
-}
+} */
