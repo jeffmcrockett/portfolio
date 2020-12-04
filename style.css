@@ -119,6 +119,14 @@
     color: red;
     text-decoration: none;
 }
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+.contact a:hover {
+    color: red;
+    text-decoration: none;
+}
 .aboutme {
     grid-area: aboutme;
     width: 100vw;
@@ -243,10 +251,11 @@
         'border2'
         'skillsandedu'
         'border3'
-        'hobbies'
-        'border4'
         'portfolio'
-        'footer';
+        'border4'
+        'hobbies'
+        'border5'
+        'contact';
     margin: 0;
 }
 .academy {
@@ -362,17 +371,114 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 98vw;
+}
+.portfoliocard {
+    display: grid;
+    grid-template-areas: 
+        'projectpicture'
+        'projecttitle'
+        'projectdescription'
+        'projectlink';
+    border: solid 5px white;
+    width: 19vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 3vw;
+    text-align: center;
+
+}
+.portfoliopicture {
+    grid-area: projectpicture;
+}
+.portfoliopicture img {
+    width: 18.7vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfoliocard h2 {
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5vw;
+    margin-top: 20px;
+}
+.portfoliocard p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    text-align: center;
+    margin-top: .7vw;
+    margin-bottom: 2vw;
+    color: red;
+}
+.portfoliocard:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.portfoliosection h6 {
+    color: rgb(37,37,37);
+    font-size: 2vw;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+}
+.hobbysection {
+    grid-area: hobbies;
+    width: 100vw;
+    background-color: black;
+}
+.hobbysection h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    color: red;
+}
+.hobbycards  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 3vw;
     width: 96vw;
 }
-.portfoliosection h6 {
+.hobbysection h6 {
+    color: black;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.contactsection {
+    grid-area: contact;
+    width: 100vw;
+    background-color: rgb(37,37,37);
+}
+.contactsection h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    color: red;
+}
+.contactcards  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3vw;
+    width: 96vw;
+}
+.contactsection h6 {
     color: rgb(37,37,37);
     font-size: 2vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
-.border3 {
-    grid-area: border3;
+.border4 {
+    grid-area: border4;
     width: 100vw;
 }
 .border2 {
