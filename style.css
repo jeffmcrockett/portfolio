@@ -339,11 +339,10 @@
     line-height: 3vw;
     align-items: baseline;
 }
-.specificskillcontainer .redicon {
-    color: red;
-}
-.specificskillcontainer .grayicon {
-    color: lightgrey;
+.specificskillcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .skillscontainer {
     display: grid;
