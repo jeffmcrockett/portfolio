@@ -335,14 +335,14 @@
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
-.specificskillcontainer i{
+.specificskillcontainer h5{
     line-height: 3vw;
-    align-items: baseline;
 }
 .specificskillcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: -2vw;
 }
 .skillscontainer {
     display: grid;
@@ -492,7 +492,7 @@
     margin-bottom: -12px;
 }
 .dates2 {
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 
