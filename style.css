@@ -485,6 +485,24 @@
 .dates2 {
     font-size: 5vw;
 }
+.contactsection h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.75vw;
+    color: white;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.contactsection h5 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5vw;
+    color: red;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0;
+    margin-bottom: 0.2vw;
+    text-align: center;
+}
 
 
 /* Start of text typewriter */
